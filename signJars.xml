@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="signJars" name="Sign all jar files with Eclipse Foundation key">
+
+	<property name="sign.archiveName" value="${featureId}-${buildId}-win32.win32.x86.zip" />
+	<property name="sign.archiveDir" value="${buildDirectory}/${buildLabel}" />
+	<property name="sign.signInputDir" value="/opt/public/download-staging.priv/technology/actf/visualization" />
+	<property name="sign.inputFile" value="${sign.signInputDir}/${sign.archiveName}" />
+	<property name="sign.signOutputDir" value="${sign.signInputDir}/output" />
+	<property name="sign.outputFile" value="${sign.signOutputDir}/${sign.archiveName}" />
+
+	<target name="signJars" depends="test.signer.exists" if="signer.exists">
+		<mkdir dir="${sign.signOutputDir}" />
+		<chmod dir="${sign.signOutputDir}" perm="ugo+rw" />
+
+		<copy file="${sign.archiveDir}/${sign.archiveName}" todir="${sign.signInputDir}" overwrite="true" />
+		<!-- TODO add pack.properties to zip file -->
+
+		<echo message="Start the external sign script" />
+		<exec executable="/usr/bin/sign" dir="${sign.signInputDir}" output="sign.out" error="sign.err" append="true">
+			<arg value="${sign.inputFile}" />
+			<arg value="mail" />
+			<arg value="${sign.signOutputDir}" />
+		</exec>
+
+		<echo message="Waiting for file ${sign.outputFile}" />
+		<waitfor maxwait="20" maxwaitunit="minute" checkevery="5" checkeveryunit="second">
+			<available file="${sign.outputFile}" />
+		</waitfor>
+
+		<sleep seconds="10" />
+		<echo message="Copying signed zip file to old location" />
+		<copy file="${sign.outputFile}" todir="${sign.archiveDir}" overwrite="true" />
+
+	</target>
+
+	<!-- This target tests to see if the signer is available. We'll only attempt to sign if it does. -->
+	<target name="test.signer.exists">
+		<available file="/usr/bin/sign" property="signer.exists"/> 
+	</target>
+
+</project>

@@ -19,7 +19,6 @@ if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${HOME}/build/root
-	updateSite=${buildRoot}/repository
 else
 	# running on Desktop. 
 	java=java
@@ -28,7 +27,6 @@ else
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${HOME}/eclipse.actf.build
-	updateSite=${buildRoot}/repository
 fi
 
 # Find the launcher JAR and PDE Build Plugin directory for the current platform.
@@ -38,6 +36,8 @@ pdeBuildPlugin=`find ${eclipseRoot} -type d -name 'org.eclipse.pde.build_*' -pri
 tempDir=${buildRoot}/temp
 buildDirectory=${buildRoot}/workspace
 prereqDir=${sharedDir}/pre-req
+updateSite=${buildDirectory}/repository
+
 
 # What feature are we building?
 featureId=org.eclipse.actf.visualization

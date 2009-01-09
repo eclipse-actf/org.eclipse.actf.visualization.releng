@@ -14,19 +14,21 @@ TIMESTAMP=${BUILD_DATE}${BUILD_TIME}
 if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
 	java=/opt/ibm/java2-ppc-50/bin/java
-	base=${HOME}/build/base/eclipse-SDK-3.4.1-win32
+	sharedDir=/shared/technology/actf
+	base=${sharedDir}/base/eclipse-SDK-3.4.1-win32
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${HOME}/build/root
-	updateSite=${buildRoot}/updates
+	updateSite=${buildRoot}/repository
 else
 	# running on Desktop. 
 	java=java
+	sharedDir=${HOME}
 	base=${HOME}
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${HOME}/eclipse.actf.build
-	updateSite=${buildRoot}/updates
+	updateSite=${buildRoot}/repository
 fi
 
 # Find the launcher JAR and PDE Build Plugin directory for the current platform.
@@ -35,6 +37,7 @@ pdeBuildPlugin=`find ${eclipseRoot} -type d -name 'org.eclipse.pde.build_*' -pri
 
 tempDir=${buildRoot}/temp
 buildDirectory=${buildRoot}/workspace
+prereqDir=/pre-req
 
 # What feature are we building?
 featureId=org.eclipse.actf.visualization
@@ -52,5 +55,5 @@ ${java} -jar ${launcherJar} \
 	-DtempDir=${tempDir} \
 	-DfeatureId=${featureId} \
 	-DlauncherJar=${launcherJar} \
- 	-DOOO_HOME=${HOME}/pre-req/OOo
+ 	-DOOO_HOME=${prereqDir}/OOo
 

@@ -37,7 +37,7 @@ pdeBuildPlugin=`find ${eclipseRoot} -type d -name 'org.eclipse.pde.build_*' -pri
 
 tempDir=${buildRoot}/temp
 buildDirectory=${buildRoot}/workspace
-prereqDir=/pre-req
+prereqDir=${sharedDir}/pre-req
 
 # What feature are we building?
 featureId=org.eclipse.actf.visualization

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/0.7/update-site/site.xml&amp;format=xml">
+<site pack200="true" mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/0.7/update-site/site.xml&amp;format=xml">
    <description url="http://download.eclipse.org/technology/actf/0.7/update-site/">
       Eclipse Accessibility Tools Framework (ACTF) incubation
    </description>

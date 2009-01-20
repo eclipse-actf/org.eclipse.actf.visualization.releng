@@ -1,5 +1,6 @@
 # feature
 feature@org.eclipse.actf.visualization=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization-feature
+feature@org.eclipse.actf.visualization.sdk=HEAD,:pserver:anonymous@proxy.eclipse.org:80/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization.sdk-feature
 
 # plugins
 

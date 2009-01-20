@@ -40,20 +40,20 @@ updateSite=${buildDirectory}/repository
 
 
 # What feature are we building?
-featureId=org.eclipse.actf.visualization
+featureId=org.eclipse.actf.visualization.sdk
 
 ${java} -jar ${launcherJar} \
 	-application org.eclipse.ant.core.antRunner \
 	-buildfile ${pdeBuildPlugin}/scripts/build.xml \
 	-DbuildDirectory=${buildDirectory} \
 	-Dbuilder=${configurationFolder} \
-        -DbuildId=${TIMESTAMP} \
-        -DbuildType=I \
-        -Dtimestamp=${TIMESTAMP} \
+	-DbuildId=${TIMESTAMP} \
+	-DbuildType=I \
+	-Dtimestamp=${TIMESTAMP} \
 	-Dbase=${base} \
-        -DupdateSite=${updateSite} \
+	-DupdateSite=${updateSite} \
 	-DtempDir=${tempDir} \
 	-DfeatureId=${featureId} \
 	-DlauncherJar=${launcherJar} \
- 	-DOOO_HOME=${prereqDir}/OOo
+	-DOOO_HOME=${prereqDir}/OOo
 

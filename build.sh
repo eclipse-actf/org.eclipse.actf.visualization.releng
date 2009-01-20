@@ -10,6 +10,7 @@
 BUILD_DATE=`date +%Y%m%d`
 BUILD_TIME=`date +%H%M`
 TIMESTAMP=${BUILD_DATE}${BUILD_TIME}
+BUILD_TYPE=I
 
 if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
@@ -48,7 +49,7 @@ ${java} -jar ${launcherJar} \
 	-DbuildDirectory=${buildDirectory} \
 	-Dbuilder=${configurationFolder} \
 	-DbuildId=${TIMESTAMP} \
-	-DbuildType=I \
+	-DbuildType=${BUILD_TYPE} \
 	-Dtimestamp=${TIMESTAMP} \
 	-Dbase=${base} \
 	-DupdateSite=${updateSite} \
@@ -57,3 +58,20 @@ ${java} -jar ${launcherJar} \
 	-DlauncherJar=${launcherJar} \
 	-DOOO_HOME=${prereqDir}/OOo
 
+
+#for future use
+#unzip ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip -d ${updateSite}
+#mv ${updateSite}/eclipse/* ${updateSite}
+#rmdir ${updateSite}/eclipse
+#
+#${java} -jar ${launcherJar} \
+#   -application org.eclipse.equinox.p2.metadata.generator.EclipseGenerator \
+#   -updateSite ${updateSite}/ \
+#   -site file:${buildDirectory}/repository/site.xml \
+#   -metadataRepository file:${updateSite}/ \
+#   -metadataRepositoryName "ACTF Update Site" \
+#   -artifactRepository file:${updateSite}/ \
+#   -artifactRepositoryName "ACTF Artifacts" \
+#   -reusePack200Files \
+#   -noDefaultIUs \
+#   -vmargs -Xmx256m

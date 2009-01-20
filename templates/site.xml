@@ -3,7 +3,7 @@
    <description url="http://download.eclipse.org/technology/actf/0.7/update-site/">
       Eclipse Accessibility Tools Framework (ACTF) incubation
    </description>
-   <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/0.7/update-site/features/org.eclipse.actf.visualization_0.7.0.XXXXXXXXXXXXX.jar&amp;r=1" id="org.eclipse.actf.visualization" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32">
+   <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/0.7/update-site/features/org.eclipse.actf.visualization.sdk_0.7.0.XXXXXXXXXXXXX.jar&amp;r=1" id="org.eclipse.actf.visualization.sdk" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
       <category name="ACTF Visualizaiton SDK (Incubation)"/>
    </feature>
    <category-def name="ACTF Visualizaiton SDK (Incubation)" label="ACTF Visualizaiton SDK (Incubation)">

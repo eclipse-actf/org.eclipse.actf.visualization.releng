@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site pack200="true" mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/0.7/milestones/site.xml&amp;format=xml">
+   <description url="http://download.eclipse.org/technology/actf/0.7/milestones/">
+      Eclipse Accessibility Tools Framework (ACTF) incubation
+   </description>
+   <feature url="features/org.eclipse.actf.visualization.sdk_0.7.0.XXXXXXXXXXXXX.jar" id="org.eclipse.actf.visualization.sdk" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
+      <category name="ACTF Visualizaiton SDK (Incubation)"/>
+   </feature>
+   <category-def name="ACTF Visualizaiton SDK (Incubation)" label="ACTF Visualizaiton SDK (Incubation)">
+      <description>
+         ACTF Visualizaiton SDK (Incubation)
+      </description>
+   </category-def>
+</site>

@@ -58,8 +58,10 @@ ${java} -jar ${launcherJar} \
 	-DlauncherJar=${launcherJar} \
 	-DOOO_HOME=${prereqDir}/OOo
 
-
-unzip ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip -d ${updateSite}
+for i in ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip
+ do
+  unzip $i -d ${updateSite}
+ done
 mv ${updateSite}/eclipse/* ${updateSite}
 rmdir ${updateSite}/eclipse
 

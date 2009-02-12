@@ -74,5 +74,6 @@ ${java} -jar ${launcherJar} \
    -artifactRepository file:${updateSite}/ \
    -artifactRepositoryName "ACTF Artifacts" \
    -reusePack200Files \
+   -compress \
    -noDefaultIUs \
    -vmargs -Xmx256m

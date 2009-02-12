@@ -1,7 +1,6 @@
 # feature
 feature@org.eclipse.actf.visualization=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization-feature
 feature@org.eclipse.actf.visualization.sdk=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization.sdk-feature
-feature@org.eclipse.actf.visualization.core=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization.core-feature
 feature@org.eclipse.actf.visualization.ui.pdt=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization.ui.pdt-feature
 feature@org.eclipse.actf.visualization.ui.wst=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/features/org.eclipse.actf.visualization.ui.wst-feature
 

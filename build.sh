@@ -59,19 +59,18 @@ ${java} -jar ${launcherJar} \
 	-DOOO_HOME=${prereqDir}/OOo
 
 
-#for future use
-#unzip ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip -d ${updateSite}
-#mv ${updateSite}/eclipse/* ${updateSite}
-#rmdir ${updateSite}/eclipse
-#
-#${java} -jar ${launcherJar} \
-#   -application org.eclipse.equinox.p2.metadata.generator.EclipseGenerator \
-#   -updateSite ${updateSite}/ \
-#   -site file:${buildDirectory}/repository/site.xml \
-#   -metadataRepository file:${updateSite}/ \
-#   -metadataRepositoryName "ACTF Update Site" \
-#   -artifactRepository file:${updateSite}/ \
-#   -artifactRepositoryName "ACTF Artifacts" \
-#   -reusePack200Files \
-#   -noDefaultIUs \
-#   -vmargs -Xmx256m
+unzip ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip -d ${updateSite}
+mv ${updateSite}/eclipse/* ${updateSite}
+rmdir ${updateSite}/eclipse
+
+${java} -jar ${launcherJar} \
+   -application org.eclipse.equinox.p2.metadata.generator.EclipseGenerator \
+   -updateSite ${updateSite}/ \
+   -site file:${buildDirectory}/repository/site.xml \
+   -metadataRepository file:${updateSite}/ \
+   -metadataRepositoryName "ACTF Update Site" \
+   -artifactRepository file:${updateSite}/ \
+   -artifactRepositoryName "ACTF Artifacts" \
+   -reusePack200Files \
+   -noDefaultIUs \
+   -vmargs -Xmx256m

@@ -6,9 +6,20 @@
    <feature url="features/org.eclipse.actf.visualization.sdk_0.7.0.XXXXXXXXXXXXX.jar" id="org.eclipse.actf.visualization.sdk" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
       <category name="ACTF Visualizaiton SDK (Incubation)"/>
    </feature>
+   <feature url="features/org.eclipse.actf.visualization.ui.pdt_0.7.0.XXXXXXXXXXXXX.jar" id="org.eclipse.actf.visualization.ui.pdt" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
+      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)"/>
+   </feature>
+   <feature url="features/org.eclipse.actf.visualization.ui.wst_0.7.0.XXXXXXXXXXXXX.jar" id="org.eclipse.actf.visualization.ui.wst" version="0.7.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
+      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)"/>
+   </feature>
    <category-def name="ACTF Visualizaiton SDK (Incubation)" label="ACTF Visualizaiton SDK (Incubation)">
       <description>
          ACTF Visualizaiton SDK (Incubation)
+      </description>
+   </category-def>
+   <category-def name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)" label="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)">
+      <description>
+         ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)
       </description>
    </category-def>
 </site>

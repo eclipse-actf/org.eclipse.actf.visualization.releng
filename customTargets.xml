@@ -9,7 +9,19 @@
 
 	<import file="${allElementsFile}" />
 	<target name="allElements">
-		<antcall target="allElementsDelegator" />
+		<!--	<antcall target="allElementsDelegator" />-->
+ 		<ant antfile="${genericTargets}" target="${target}">
+	 		<property name="type" value="feature" />
+	 		<property name="id" value="org.eclipse.actf.visualization.sdk" />
+ 		</ant>		
+ 		<ant antfile="${genericTargets}" target="${target}">
+	 		<property name="type" value="feature" />
+	 		<property name="id" value="org.eclipse.actf.visualization.ui.wst" />
+ 		</ant>
+ 		<ant antfile="${genericTargets}" target="${target}">
+	 		<property name="type" value="feature" />
+	 		<property name="id" value="org.eclipse.actf.visualization.ui.pdt" />
+ 		</ant>
 	</target>
 	
 	<!-- ===================================================================== -->

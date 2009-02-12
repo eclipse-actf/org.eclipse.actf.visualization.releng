@@ -18,7 +18,7 @@
 		<echo message="Start the external sign script" />
 		<exec executable="/usr/bin/sign" dir="${sign.signInputDir}" output="sign.out" error="sign.err" append="true">
 			<arg value="${sign.inputFile}" />
-			<arg value="mail" />
+			<arg value="nomail" />
 			<arg value="${sign.signOutputDir}" />
 		</exec>
 

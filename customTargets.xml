@@ -144,8 +144,15 @@
 	<!-- Steps to do after  running package. -->
 	<!-- ===================================================================== -->
 	<target name="postPackage">
-    <ant antfile="${builder}/signJars.xml"
-         target="signJars" />
+    	<ant antfile="${builder}/signJars.xml" target="signJars">
+    		<property name="id" value="org.eclipse.actf.visualization.sdk" />
+    	</ant>
+	    <ant antfile="${builder}/signJars.xml" target="signJars">
+	    	<property name="id" value="org.eclipse.actf.visualization.ui.pdt" />
+	    </ant>
+	    <ant antfile="${builder}/signJars.xml" target="signJars">
+	    	<property name="id" value="org.eclipse.actf.visualization.ui.wst" />
+	    </ant>
 	</target>
 
 	<!-- ===================================================================== -->

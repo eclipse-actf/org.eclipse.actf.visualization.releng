@@ -58,13 +58,6 @@ ${java} -jar ${launcherJar} \
 	-DlauncherJar=${launcherJar} \
 	-DOOO_HOME=${prereqDir}/OOo
 
-for i in ${buildDirectory}/${BUILD_TYPE}${TIMESTAMP}/*${TIMESTAMP}-*.zip
- do
-  unzip $i -d ${updateSite}
- done
-mv ${updateSite}/eclipse/* ${updateSite}
-rmdir ${updateSite}/eclipse
-
 ${java} -jar ${launcherJar} \
    -application org.eclipse.equinox.p2.metadata.generator.EclipseGenerator \
    -updateSite ${updateSite}/ \

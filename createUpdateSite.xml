@@ -34,6 +34,7 @@
         dir="${tempDir}" 
       	includes="site.xml" 
       	fullpath="eclipse/site.xml"/>
+      <zipgroupfileset dir="${archiveDir}" includes="org.eclipse.actf.visualization.*.zip" />
     </zip>
   </target>
 

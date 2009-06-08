@@ -16,7 +16,7 @@ if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
 	java=/opt/ibm/java2-ppc-50/bin/java
 	sharedDir=/shared/technology/actf
-	base=${sharedDir}/base/eclipse-SDK-3.4.1-win32
+	base=${sharedDir}/base
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${HOME}/build/root

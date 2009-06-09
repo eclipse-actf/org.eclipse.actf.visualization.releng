@@ -42,6 +42,7 @@ fragment@org.eclipse.actf.visualization.flash=HEAD,:pserver:anonymous@dev.eclips
 plugin@org.eclipse.actf.examples.adesigner.eval.odf=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.examples/plugins/org.eclipse.actf.examples.adesigner.eval.odf
 plugin@org.eclipse.actf.examples.adesigner.eval.html=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.examples/plugins/org.eclipse.actf.examples.adesigner.eval.html
 plugin@org.eclipse.actf.visualization.doc.isv=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/plugins/org.eclipse.actf.visualization.doc.isv
+plugin@org.eclipse.actf.visualization.doc.user=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/plugins/org.eclipse.actf.visualization.doc.user
 plugin@org.eclipse.actf.visualization.ui.pdt=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/plugins/org.eclipse.actf.visualization.ui.pdt
 plugin@org.eclipse.actf.visualization.ui.wst=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/plugins/org.eclipse.actf.visualization.ui.wst
 plugin@org.eclipse.actf.visualization.sdk=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.visualization/plugins/org.eclipse.actf.visualization.sdk

@@ -8,6 +8,7 @@ feature@org.eclipse.actf.visualization.ui.wst=HEAD,:pserver:anonymous@dev.eclips
 
 plugin@org.eclipse.actf.util.win32.comclutch=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.common/plugins/org.eclipse.actf.util.win32.comclutch
 plugin@org.eclipse.actf.ai.tts.sapi=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.ai/plugins/org.eclipse.actf.ai.tts.sapi
+plugin@org.eclipse.actf.ai.tts.msp=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.ai/plugins/org.eclipse.actf.ai.tts.msp
 plugin@org.eclipse.actf.ai.voice=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.ai/plugins/org.eclipse.actf.ai.voice
 plugin@org.eclipse.actf.core=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.common/plugins/org.eclipse.actf.core
 plugin@org.eclipse.actf.ui=HEAD,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,,org.eclipse.actf/org.eclipse.actf.common/plugins/org.eclipse.actf.ui

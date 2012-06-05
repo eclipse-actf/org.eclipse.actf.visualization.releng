@@ -2,31 +2,31 @@
 <site
       mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/site.xml&amp;format=xml">
    <description url="http://download.eclipse.org/technology/actf/1.0/update-site/">
-      Eclipse Accessibility Tools Framework (ACTF) incubation
+      Eclipse Accessibility Tools Framework (ACTF)
    </description>
    <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/features/org.eclipse.actf.visualization.sdk_1.0.0.XXXXXXXXXXXXX.jar&r=1" id="org.eclipse.actf.visualization.sdk" version="1.0.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
-      <category name="ACTF Visualizaiton SDK (Incubation)"/>
+      <category name="ACTF Visualizaiton SDK"/>
    </feature>
    <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/features/org.eclipse.actf.visualization_1.0.0.XXXXXXXXXXXXX.jar&r=1" id="org.eclipse.actf.visualization" version="1.0.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
-      <category name="ACTF Visualizaiton SDK (Incubation)"/>
+      <category name="ACTF Visualizaiton SDK"/>
    </feature>
    <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/features/org.eclipse.actf.visualization.source_1.0.0.XXXXXXXXXXXXX.jar&r=1" id="org.eclipse.actf.visualization.source" version="1.0.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
-      <category name="ACTF Visualizaiton SDK (Incubation)"/>
+      <category name="ACTF Visualizaiton SDK"/>
    </feature>
    <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/features/org.eclipse.actf.visualization.ui.pdt_1.0.0.XXXXXXXXXXXXX.jar&r=1" id="org.eclipse.actf.visualization.ui.pdt" version="1.0.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
-      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)"/>
+      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment"/>
    </feature>
    <feature url="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/update-site/features/org.eclipse.actf.visualization.ui.wst_1.0.0.XXXXXXXXXXXXX.jar&r=1" id="org.eclipse.actf.visualization.ui.wst" version="1.0.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">
-      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)"/>
+      <category name="ACTF Visualizaiton UI Extensions for Web Development Environment"/>
    </feature>
-   <category-def name="ACTF Visualizaiton SDK (Incubation)" label="ACTF Visualizaiton SDK (Incubation)">
+   <category-def name="ACTF Visualizaiton SDK" label="ACTF Visualizaiton SDK">
       <description>
-         ACTF Visualizaiton SDK (Incubation)
+         ACTF Visualizaiton SDK
       </description>
    </category-def>
-   <category-def name="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)" label="ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)">
+   <category-def name="ACTF Visualizaiton UI Extensions for Web Development Environment" label="ACTF Visualizaiton UI Extensions for Web Development Environment">
       <description>
-         ACTF Visualizaiton UI Extensions for Web Development Environment (Incubation)
+         ACTF Visualizaiton UI Extensions for Web Development Environment
       </description>
    </category-def>
 </site>

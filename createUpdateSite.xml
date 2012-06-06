@@ -43,15 +43,14 @@
     <property name="pack200tempDir" value="${tempDir}/pack"/>
     <mkdir dir="${pack200tempDir}" />
     <java 
-      jar="${launcherJar}" 
+      jar="${jarprocessorJar}" 
       fork="true" 
       failonerror="true" 
       dir="${tempDir}"
       append="true"
       output="${tempDir}/pack200.out"
       error="${tempDir}/pack200.err">
-      <arg line="-consolelog -application org.eclipse.update.core.siteOptimizer" />
-      <arg line="-jarProcessor -verbose -outputDir ${pack200tempDir} -processAll -repack -pack ${archiveDir}/${archiveName}"/>      
+      <arg line="-verbose -outputDir ${pack200tempDir} -processAll -repack -pack ${archiveDir}/${archiveName}"/>      
     </java>
     <move file="${pack200tempDir}/${archiveName}" todir="${archiveDir}" overwrite="true" />
   </target>

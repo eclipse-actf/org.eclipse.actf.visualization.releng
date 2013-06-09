@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site pack200="true" mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.0/milestones/site.xml&amp;format=xml">
-   <description url="http://download.eclipse.org/technology/actf/1.0/milestones/">
+<site pack200="true" mirrorsURL="http://www.eclipse.org/downloads/download.php?file=/technology/actf/1.1/milestones/site.xml&amp;format=xml">
+   <description url="http://download.eclipse.org/technology/actf/1.1/milestones/">
       Eclipse Accessibility Tools Framework (ACTF)
    </description>
    <feature url="features/org.eclipse.actf.visualization.sdk_1.1.0.XXXXXXXXXXXXX.jar" id="org.eclipse.actf.visualization.sdk" version="1.1.0.XXXXXXXXXXXXX" os="win32" ws="win32" arch="x86">

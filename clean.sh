@@ -9,7 +9,7 @@
 
 if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
-	buildRoot=${HOME}/build/root
+	buildRoot=/shared/technology/actf/build/root
 else
 	# running on Desktop.
 	buildRoot=${HOME}/eclipse.actf.build
@@ -21,3 +21,6 @@ rm -f ${buildDirectory}/*.*
 rm -rf ${buildDirectory}/plugins
 rm -rf ${buildDirectory}/features
 rm -rf ${buildDirectory}/repository/*
+rm -rf ${buildDirectory}/scmCache/*
+rm -rf /shared/technology/actf/base/eclipse/plugins/*/scripts/scmCache/*
+

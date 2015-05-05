@@ -23,7 +23,7 @@
 		</exec>
 
 		<echo message="Waiting for file ${sign.outputFile}" />
-		<waitfor maxwait="30" maxwaitunit="minute" checkevery="5" checkeveryunit="second">
+		<waitfor maxwait="60" maxwaitunit="minute" checkevery="5" checkeveryunit="second">
 			<available file="${sign.outputFile}" />
 		</waitfor>
 

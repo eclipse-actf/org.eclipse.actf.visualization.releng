@@ -10,16 +10,16 @@
 BUILD_DATE=`date +%Y%m%d`
 BUILD_TIME=`date +%H%M`
 TIMESTAMP=${BUILD_DATE}${BUILD_TIME}
-BUILD_TYPE=I
+BUILD_TYPE=R
 
 if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
-	java=/opt/ibm/java2-ppc-50/bin/java
+	java=/shared/common/jdk1.7.0-latest/jre/bin/java
 	sharedDir=/shared/technology/actf
 	base=${sharedDir}/base/
 	eclipseRoot=${base}/eclipse
-	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
-	buildRoot=${HOME}/build/root
+	configurationFolder=${sharedDir}/build/org.eclipse.actf.visualization.releng
+	buildRoot=${sharedDir}/build/root
 else
 	# running on Desktop. 
 	java=java
@@ -58,7 +58,8 @@ ${java} -jar ${launcherJar} \
 	-DfeatureId=${featureId} \
 	-DlauncherJar=${launcherJar} \
 	-DjarprocessorJar=${jarprocessorJar} \
-	-DOOO_HOME=${prereqDir}/OOo
+	-DOOO_HOME=${prereqDir}/OOo \
+	-vmargs -Xmx1024m
 
 ${java} -jar ${launcherJar} \
    -application org.eclipse.equinox.p2.publisher.UpdateSitePublisher \
@@ -66,6 +67,13 @@ ${java} -jar ${launcherJar} \
    -artifactRepository file:${updateSite}/ \
    -source ${buildDirectory}/repository/ \
    -config win32.win32.x86 \
-   -compress \
    -reusePack200Files \
-   -publishArtifacts
+   -publishArtifacts \
+   -compress 
+
+#   -updateSite ${updateSite}/ \
+#   -metadataRepositoryName "ACTF Update Site" \
+#   -artifactRepositoryName "ACTF Artifacts" \
+#   -noDefaultIUs \
+#   -vmargs -Xmx256m
+   

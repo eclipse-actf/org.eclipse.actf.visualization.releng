@@ -12,7 +12,6 @@ BUILD_TIME=`date +%H%M`
 TIMESTAMP=${BUILD_DATE}${BUILD_TIME}
 BUILD_TYPE=R
 
-if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	# We're running on the build server. Configure the environment for there.
 	java=/shared/common/jdk1.7.0-latest/jre/bin/java
 	sharedDir=/shared/technology/actf
@@ -20,15 +19,6 @@ if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
 	eclipseRoot=${base}/eclipse
 	configurationFolder=${sharedDir}/build/org.eclipse.actf.visualization.releng
 	buildRoot=${sharedDir}/build/root
-else
-	# running on Desktop. 
-	java=java
-	sharedDir=${HOME}
-	base=${HOME}
-	eclipseRoot=${base}/eclipse
-	configurationFolder=${HOME}/build/org.eclipse.actf.visualization.releng
-	buildRoot=${HOME}/eclipse.actf.build
-fi
 
 # Find the launcher JAR and PDE Build Plugin directory for the current platform.
 launcherJar=`find ${eclipseRoot} -type f -name 'org.eclipse.equinox.launcher_*.jar' -print0`

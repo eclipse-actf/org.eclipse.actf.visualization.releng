@@ -7,13 +7,7 @@
 # http://www.eclipse.org/legal/epl-v10.html
 #====================================================================================
 
-if [ -f /opt/ibm/java2-ppc-50/bin/java ]; then
-	# We're running on the build server. Configure the environment for there.
 	buildRoot=/shared/technology/actf/build/root
-else
-	# running on Desktop.
-	buildRoot=${HOME}/eclipse.actf.build
-fi
 
 buildDirectory=${buildRoot}/workspace
 
